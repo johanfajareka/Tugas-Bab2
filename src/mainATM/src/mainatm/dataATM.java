@@ -23,4 +23,17 @@ public class dataATM {
     login();
     }
     public void login(){
+       int pin;
+        System.out.println("====================================");
+        System.out.println("|   Selamat datang di ATM bank JFE  |");
+        System.out.println("");
+        System.out.println("====================================");
+        System.out.print("Masukkan PIN anda : ");
+        pin = in.nextInt();
+        if (atm.getPin()==pin) {
+            menu();}
+        else {System.out.println("Pin salah, ulangi lagi");}
+            login();
+        }
+    }
 }
