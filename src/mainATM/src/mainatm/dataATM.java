@@ -32,8 +32,20 @@ public class dataATM {
         pin = in.nextInt();
         if (atm.getPin()==pin) {
             menu();}
-        else {System.out.println("Pin salah, ulangi lagi");}
-            login();
+        else {System.out.println("Pin salah, ulangi lagi");
+        login();}
+            
         }
+    public void menu(){
+        System.out.println("=====================================");
+        System.out.println("|   >> Pilih Transaksi <<   |");
+        System.out.println("");
+        System.out.println("|   (1).Cek Saldo       (2).Transfer    |");
+        System.out.println("");
+        System.out.println("|   (3).Tarik Tunai     (4).Keluar      |");
+        System.out.println("");
+        System.out.println("=====================================");
+        
+    }
     }
 }
