@@ -3,15 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package mainatm;
+
 /**
  *
- * @author irwin deriyan
+ * @author user
  */
-public class LatihanBab1 {
+public class MainATM {
+
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        hy hy
-        
-        
+        // TODO code application logic here
     }
     
 }

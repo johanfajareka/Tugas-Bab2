@@ -3,15 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package mainatm;
+
 /**
  *
- * @author irwin deriyan
+ * @author user
  */
-public class LatihanBab1 {
-    public static void main(String[] args) {
-        hy hy
-        
-        
-    }
+public class dataATM {
     
 }
