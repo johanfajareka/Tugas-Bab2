@@ -5,10 +5,22 @@
  */
 package mainatm;
 
+import java.util.Scanner;
+
 /**
  *
  * @author user
  */
 public class dataATM {
+    Scanner in = new Scanner (System.in);
+    ATM atm = new ATM();
+    MainATM main = new MainATM();
+    double minSaldo = 50000;
+    int pil;
     
+    public void asal(){
+    atm.setSaldo(5000000);
+    login();
+    }
+    public void login(){
 }
