@@ -61,12 +61,34 @@ public class dataATM {
                       
     }
     public void lihatSaldo(){
+    dataATM data = new dataATM();
+        System.out.println("============================");
+        System.out.println("|        Cek Saldo         |");
+        System.out.println("============================");
+        System.out.println("Sisa Saldo anda sebesar Rp. "+ atm.getSaldo());
+        transaksiLagi();
     
     }
     public void transfer(){
+        int norek;
+        double nom;
+        System.out.println("============================");
+        System.out.println("|         Transfer         |");
+        System.out.println("============================");
+        System.out.print("    Masukkan Nomor Rekening : ");
+        norek = in.nextInt();
+        System.out.print("    Masukkan Nominal Transfer : ");
+        nom = in.nextDouble();
+        transferNominal(nom,norek);
+        
+    }
+    public void transferNominal(double nom,int norek){
     
     }
     public void tarik(){
+        
+    }
+    public void transaksiLagi(){
     
     }
     }
