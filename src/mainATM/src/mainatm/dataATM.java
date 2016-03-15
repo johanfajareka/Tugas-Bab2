@@ -45,7 +45,29 @@ public class dataATM {
         System.out.println("|   (3).Tarik Tunai     (4).Keluar      |");
         System.out.println("");
         System.out.println("=====================================");
+        System.out.print("        Masukkan Pilihan Anda : ");
+        pil = in.nextInt();
+        switch (pil) {
+            case 1 : lihatSaldo();break;
+            case 2 : transfer();break;
+            case 3 : tarik();break;
+            case 4 : System.out.println("=============================");
+                System.out.println("Terima Kasih telah menggunakan layanan kami \n Silahkan ambil kartu ATM anda");
+                break;
+            default : System.out.println("Pilihan angka yang anda masukkan tidak sesuai silahkan login kembali");
+                      login();break;
+        }              
         
+                      
+    }
+    public void lihatSaldo(){
+    
+    }
+    public void transfer(){
+    
+    }
+    public void tarik(){
+    
     }
     }
-}
+
