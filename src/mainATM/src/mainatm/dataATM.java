@@ -103,20 +103,26 @@ public class dataATM {
         System.out.println("|       Penarikan Tunai         |");
         System.out.println("=================================");
         System.out.println("|       >> Pilih Nominal <<     |");
-        System.out.println("|   (1).Rp. 100.000     (2).Rp 200.000    |");
-        System.out.println("|   (3).Rp. 500.000     (4).Rp 1.000.000  |");
-        System.out.println("|   (5).Rp. 2.000.000   (6).Penarikan     |");
+        System.out.println("|   (1).Rp. 100.000     (2).Rp.200.000    |");
+        System.out.println("|   (3).Rp. 500.000     (4).Rp.1.000.000  |");
+        System.out.println("|   (5).Rp. 1.500.000   (6).Rp.2.000.000  |");
         System.out.println("=================================");
         System.out.print("    Masukkan pilihan anda :   ");
         pil = in.nextInt();
         System.out.println("=================================");
         switch (pil){
             case 1:tarikNominal(100000);break;
-                
+            case 2:tarikNominal(200000);break;
+            case 3:tarikNominal(500000);break;
+            case 4:tarikNominal(1000000);break;
+            case 5:tarikNominal(1500000);break;
+            case 6:tarikNominal(2000000);break;
+            default : System.out.println("  Pilihan yang anda masukkan salah    ");
+            tarik();    
         }
     }
     public void transaksiLagi(){
-    
+        
     }
     }
 
