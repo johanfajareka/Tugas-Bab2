@@ -83,7 +83,19 @@ public class dataATM {
         
     }
     public void transferNominal(double nom,int norek){
-    
+        double saldo = atm.getSaldo();
+        if (atm.getSaldo()<=50000){
+            System.out.println("Saldo anda tidak mencukupi");        
+        }
+        else{saldo -= nom;
+        if (saldo < minSaldo){
+            System.out.println("    Jumlah transfer melebihi batas saldo");
+            System.out.println("    Sisa saldo tidak mencukupi");}
+        else{atm.setSaldo(saldo);
+            System.out.println("    Anda berhasil melakukan transfer sebesar : "+nom);
+            System.out.println("    Ke nomer rekening : "+norek);
+            System.out.println("    Sisa Saldo anda sekarang : "+saldo);}
+        }transaksiLagi();
     }
     public void tarik(){
         
