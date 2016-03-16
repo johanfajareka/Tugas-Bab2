@@ -141,16 +141,17 @@ public class dataATM {
     }
     public void transaksiLagi(){
         String peringatan;
+        Scanner scan = new Scanner(System.in);
         System.out.println("=======================================");
         System.out.println("Apakan anda ingin melakukan transaksi lagi ? (Y)/(N) ");
-        peringatan = in.nextLine();
+        peringatan = scan.nextLine();
         System.out.println("");
         if (peringatan.equalsIgnoreCase("Y")){
         login();}
         else if(peringatan.equalsIgnoreCase("N")){
             System.out.println("======================================");
             System.out.println("    Terimakasih telah menggunakan layanan kami  ");
-            System.out.println("    Silahkan ambil kartu anda kembali   ");
+            System.out.println("    Silahkan ambil kartu ATM anda   ");
         }
     }
 }
