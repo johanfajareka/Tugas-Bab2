@@ -121,6 +121,24 @@ public class dataATM {
             tarik();    
         }
     }
+    public void tarikNominal (double nominal){
+        double saldo = atm.getSaldo();
+        if (atm.getSaldo()<50000){
+            System.out.println("    Penarikan terlalu besar\n"
+                    + "Maaf saldo anda tidak mencukupi     ");          
+        }
+        else {saldo -= nominal;
+        if (saldo<minSaldo){
+            System.out.println("    Maaf, jumlah penarikan terlalu besar\n"
+                    + "    Sisa saldo tidak mencukupi");
+        }else{
+        atm.setSaldo(saldo);
+            System.out.println("    Anda telah melakukan penarikan sebesar : "+ nominal);
+            System.out.println("    Sisa saldo anda adalah : "+saldo);
+            }
+        }
+        transaksiLagi();
+    }
     public void transaksiLagi(){
         
     }
