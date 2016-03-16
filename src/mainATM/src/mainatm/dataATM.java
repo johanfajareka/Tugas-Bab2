@@ -25,7 +25,7 @@ public class dataATM {
     public void login(){
        int pin;
         System.out.println("====================================");
-        System.out.println("|   Selamat datang di ATM bank JFE  |");
+        System.out.println("|  Selamat datang di ATM bank JFE  |");
         System.out.println("");
         System.out.println("====================================");
         System.out.print("Masukkan PIN anda : ");
@@ -37,21 +37,21 @@ public class dataATM {
             
         }
     public void menu(){
-        System.out.println("=====================================");
-        System.out.println("|   >> Pilih Transaksi <<   |");
+        System.out.println("====================================");
+        System.out.println("|       >> Pilih Transaksi <<      |");
         System.out.println("");
-        System.out.println("|   (1).Cek Saldo       (2).Transfer    |");
+        System.out.println("|  (1).Cek Saldo   (2).Transfer    |");
         System.out.println("");
-        System.out.println("|   (3).Tarik Tunai     (4).Keluar      |");
+        System.out.println("|  (3).Tarik Tunai (4).Keluar      |");
         System.out.println("");
-        System.out.println("=====================================");
+        System.out.println("====================================");
         System.out.print("        Masukkan Pilihan Anda : ");
         pil = in.nextInt();
         switch (pil) {
             case 1 : lihatSaldo();break;
             case 2 : transfer();break;
             case 3 : tarik();break;
-            case 4 : System.out.println("=============================");
+            case 4 : System.out.println("====================================");
                 System.out.println("Terima Kasih telah menggunakan layanan kami \n Silahkan ambil kartu ATM anda");
                 break;
             default : System.out.println("Pilihan angka yang anda masukkan tidak sesuai silahkan login kembali");
@@ -62,9 +62,9 @@ public class dataATM {
     }
     public void lihatSaldo(){
     dataATM data = new dataATM();
-        System.out.println("============================");
-        System.out.println("|        Cek Saldo         |");
-        System.out.println("============================");
+        System.out.println("====================================");
+        System.out.println("|            Cek Saldo             |");
+        System.out.println("====================================");
         System.out.println("Sisa Saldo anda sebesar Rp. "+ atm.getSaldo());
         transaksiLagi();
     
@@ -72,9 +72,9 @@ public class dataATM {
     public void transfer(){
         int norek;
         double nom;
-        System.out.println("============================");
-        System.out.println("|         Transfer         |");
-        System.out.println("============================");
+        System.out.println("====================================");
+        System.out.println("|             Transfer             |");
+        System.out.println("====================================");
         System.out.print("    Masukkan Nomor Rekening : ");
         norek = in.nextInt();
         System.out.print("    Masukkan Nominal Transfer : ");
@@ -99,17 +99,17 @@ public class dataATM {
     }
     public void tarik(){
         double penarikan;
-        System.out.println("=================================");
-        System.out.println("|       Penarikan Tunai         |");
-        System.out.println("=================================");
-        System.out.println("|       >> Pilih Nominal <<     |");
-        System.out.println("|   (1).Rp. 100.000     (2).Rp.200.000    |");
-        System.out.println("|   (3).Rp. 500.000     (4).Rp.1.000.000  |");
-        System.out.println("|   (5).Rp. 1.500.000   (6).Rp.2.000.000  |");
-        System.out.println("=================================");
+        System.out.println("=====================================");
+        System.out.println("|          Penarikan Tunai          |");
+        System.out.println("=====================================");
+        System.out.println("|        >> Pilih Nominal <<        |");
+        System.out.println("|(1).Rp. 100.000  (2).Rp.200.000    |");
+        System.out.println("|(3).Rp. 500.000  (4).Rp.1.000.000  |");
+        System.out.println("|(5).Rp. 1.500.000(6).Rp.2.000.000  |");
+        System.out.println("=====================================");
         System.out.print("    Masukkan pilihan anda :   ");
         pil = in.nextInt();
-        System.out.println("=================================");
+        System.out.println("=====================================");
         switch (pil){
             case 1:tarikNominal(100000);break;
             case 2:tarikNominal(200000);break;
@@ -142,14 +142,14 @@ public class dataATM {
     public void transaksiLagi(){
         String peringatan;
         Scanner scan = new Scanner(System.in);
-        System.out.println("=======================================");
+        System.out.println("====================================");
         System.out.println("Apakan anda ingin melakukan transaksi lagi ? (Y)/(N) ");
         peringatan = scan.nextLine();
         System.out.println("");
         if (peringatan.equalsIgnoreCase("Y")){
         login();}
         else if(peringatan.equalsIgnoreCase("N")){
-            System.out.println("======================================");
+            System.out.println("====================================");
             System.out.println("    Terimakasih telah menggunakan layanan kami  ");
             System.out.println("    Silahkan ambil kartu ATM anda   ");
         }
