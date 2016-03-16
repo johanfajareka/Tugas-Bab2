@@ -1,21 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mainatm;
 
-/**
- *
- * @author user
- */
-public class MainATM {
+import java.util.Scanner;
 
-    /**
-     * @param args the command line arguments
-     */
+public class MainATM {
+        Scanner in = new Scanner(System.in);
+        int pil;
+        double minSaldo = 50000;
+        
     public static void main(String[] args) {
-        // TODO code application logic here
+        MainATM program = new MainATM();
+        program.atm();
+        
     }
-    
+    public void atm(){
+        dataATM data = new dataATM();
+        data.asal();
+    }
 }
