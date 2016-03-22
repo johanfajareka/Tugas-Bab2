@@ -11,19 +11,12 @@ public class dataATM {
     int pil;
     
     public void asal(){
+    atm.setSaldo(5000000);
     user.setSaldoUser(3000000);
         for (int i = 0; i < 100; i++) {
           login1();
           login();
         }
-    
-    atm.setSaldo(5000000);
-        for (int i = 0; i < 100; i++) {
-            
-        }
-    
-    
-    
     }
     public void login(){
        int pin;
@@ -69,7 +62,6 @@ public class dataATM {
         System.out.println("|            Cek Saldo             |");
         System.out.println("====================================");
         System.out.println("Sisa Saldo anda sebesar Rp. "+ (atm.getSaldo()+main.trans));
-        System.out.println(main.trans);
         transaksiLagi();
     
     }
@@ -99,6 +91,7 @@ public class dataATM {
             System.out.println("    Anda berhasil melakukan transfer sebesar : "+nom);
             System.out.println("    Ke nomer rekening : "+norek);
             System.out.println("    Sisa Saldo anda sekarang : "+saldo);}
+        main.trans2 = nom;
         }transaksiLagi();
     }
     public void tarik(){
@@ -202,7 +195,7 @@ public class dataATM {
         System.out.println("====================================");
         System.out.println("|            Cek Saldo             |");
         System.out.println("====================================");
-        System.out.println("Sisa Saldo anda sebesar Rp. "+ user.getSaldoUser());
+        System.out.println("Sisa Saldo anda sebesar Rp. "+ (user.getSaldoUser()+main.trans2));
         transaksiLagi1();
     
     }

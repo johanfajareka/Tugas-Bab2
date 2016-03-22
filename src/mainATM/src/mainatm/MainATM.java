@@ -7,6 +7,7 @@ public class MainATM {
         int pil;
         double minSaldo = 50000;
         double trans;
+        double trans2;
         
     public static void main(String[] args) {
         
